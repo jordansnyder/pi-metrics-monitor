@@ -15,8 +15,7 @@ log = logging.getLogger('metrics_monitor')
 log.addHandler(JournalHandler())
 log.setLevel(logging.INFO)
 
-# Create Prometheus gauges for humidity and temperature in
-# Celsius and Fahrenheit
+# Create Prometheus gauges for CPU/GPU temperature
 gpuTempGauge = Gauge('gpu_temperature', 'GPU Temperature')
 cpuTempGauge = Gauge('cpu_temperature', 'CPU Temperature')
 
