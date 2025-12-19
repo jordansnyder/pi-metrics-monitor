@@ -2,7 +2,8 @@
 
 # Install prometheus-client
 echo "Install Prometheus Client system-wide..."
-sudo pip3 install prometheus-client
+#sudo pip3 install prometheus-client
+sudo apt-get install python3-prometheus-client
 
 # Install the python3-systemd package for Journal integration
 echo "Install systemd package for syslog integration"
