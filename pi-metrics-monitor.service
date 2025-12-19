@@ -1,0 +1,12 @@
+[Unit]
+Description=Pi Metrics Service for Prometheus       
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=python3 /opt/metrics-service/metrics_monitor.py
+
+[Install]
+WantedBy=multi-user.target
