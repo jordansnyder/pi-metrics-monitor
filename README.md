@@ -4,4 +4,8 @@ Installs a system service (and dependencies) that will read CPU and GPU temps ev
 You can curl $HOST:8000 or open in a browser to verify that the data is being published.
 
 `sudo ./install.sh`
+
+
+Check the status of the service:
+
 `sudo systemctl status pi-metrics-monitor.service`
