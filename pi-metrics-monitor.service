@@ -6,7 +6,7 @@ StartLimitIntervalSec=0
 [Service]
 Type=simple
 Restart=always
-ExecStart=python3 /opt/metrics-service/metrics_monitor.py
+ExecStart=python3 /opt/pi-metrics-service/metrics_monitor.py
 
 [Install]
 WantedBy=multi-user.target
